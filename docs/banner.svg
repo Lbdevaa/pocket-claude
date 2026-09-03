@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="pocket-claude — личный Telegram-бот с Claude">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#12141A"/>
+      <stop offset="55%" stop-color="#171A21"/>
+      <stop offset="100%" stop-color="#1B1E26"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D97757" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#D97757" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .t { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+      .m { font-family: ui-monospace, "Cascadia Code", Consolas, "SF Mono", Menlo, monospace; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="320" rx="22" fill="url(#bg)"/>
+  <rect width="520" height="320" rx="22" fill="url(#glow)"/>
+  <rect x="0.5" y="0.5" width="1199" height="319" rx="21.5" fill="none" stroke="#2A2E38"/>
+
+  <!-- левая часть: название и суть -->
+  <circle cx="66" cy="84" r="9" fill="#D97757"/>
+  <text class="m" x="88" y="91" font-size="19" fill="#8A90A0">домашний сервер · 24/7</text>
+
+  <text class="t" x="64" y="164" font-size="60" font-weight="700" fill="#F2F1EE" letter-spacing="-1.5">pocket-claude</text>
+  <text class="t" x="64" y="204" font-size="23" fill="#9DA4B4">Личный Telegram-бот с Claude. Помнит разговор,</text>
+  <text class="t" x="64" y="234" font-size="23" fill="#9DA4B4">отвечает только владельцу.</text>
+
+  <g class="m" font-size="15" fill="#7E8598">
+    <rect x="64" y="258" width="104" height="32" rx="8" fill="#1F232B" stroke="#31363F"/>
+    <text x="116" y="279" text-anchor="middle">Node 26</text>
+    <rect x="180" y="258" width="96" height="32" rx="8" fill="#1F232B" stroke="#31363F"/>
+    <text x="228" y="279" text-anchor="middle">grammY</text>
+    <rect x="288" y="258" width="126" height="32" rx="8" fill="#1F232B" stroke="#31363F"/>
+    <text x="351" y="279" text-anchor="middle">node:sqlite</text>
+    <rect x="426" y="258" width="150" height="32" rx="8" fill="#1F232B" stroke="#31363F"/>
+    <text x="501" y="279" text-anchor="middle">2 зависимости</text>
+  </g>
+
+  <!-- правая часть: путь сообщения -->
+  <g class="t" font-size="16">
+    <rect x="700" y="112" width="118" height="58" rx="12" fill="#1F232B" stroke="#343945"/>
+    <text x="759" y="139" text-anchor="middle" fill="#C9CED8">Telegram</text>
+    <text x="759" y="158" text-anchor="middle" fill="#6E7484" font-size="13">polling</text>
+
+    <rect x="866" y="112" width="118" height="58" rx="12" fill="#221E1D" stroke="#D97757"/>
+    <text x="925" y="139" text-anchor="middle" fill="#F2D9CF">бот</text>
+    <text x="925" y="158" text-anchor="middle" fill="#B08072" font-size="13">дома</text>
+
+    <rect x="1032" y="112" width="118" height="58" rx="12" fill="#1F232B" stroke="#343945"/>
+    <text x="1091" y="139" text-anchor="middle" fill="#C9CED8">Claude</text>
+    <text x="1091" y="158" text-anchor="middle" fill="#6E7484" font-size="13">API</text>
+
+    <rect x="866" y="222" width="118" height="46" rx="12" fill="#1F232B" stroke="#343945"/>
+    <text x="925" y="250" text-anchor="middle" fill="#8A90A0" font-size="14">история</text>
+  </g>
+
+  <g stroke="#4A5060" stroke-width="1.6" fill="none">
+    <path d="M818 141 h30"/>
+    <path d="M984 141 h30"/>
+    <path d="M925 170 v52" stroke-dasharray="4 4"/>
+  </g>
+  <g fill="#4A5060">
+    <path d="M848 141 l-8 -4.5 v9 z"/>
+    <path d="M1014 141 l-8 -4.5 v9 z"/>
+    <path d="M925 222 l-4.5 -8 h9 z"/>
+  </g>
+</svg>

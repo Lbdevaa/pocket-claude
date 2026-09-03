@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/banner.svg" alt="pocket-claude — личный Telegram-бот с Claude" width="880">
+</p>
+
 # pocket-claude
 
 Личный Telegram-бот с Claude. Крутится на домашнем компьютере, отвечает только
@@ -168,6 +172,28 @@ console.anthropic.com. Подписка Claude.ai его не пополняет
 ---
 
 ## Что внутри
+
+```mermaid
+flowchart LR
+    U(["Ты в Telegram"]) -->|вопрос| I
+
+    subgraph home ["на твоём компьютере"]
+        direction TB
+        I["index.js<br/>whitelist, команды"]
+        H[("history.js<br/>node:sqlite")]
+        C["claude.js"]
+        T["telegram.js<br/>режет ответ >4096"]
+        I --> H
+        H -->|последние 30 сообщений| C
+        C --> T
+    end
+
+    C <-->|Anthropic API| A(["Claude"])
+    T -->|ответ| U
+```
+
+Вопрос попадает в базу только после успешного ответа: если Claude недоступен,
+история остаётся нетронутой и повторить можно тем же сообщением.
 
 ```
 src/index.js      точка входа: whitelist, команды, «печатает», обработка ошибок
