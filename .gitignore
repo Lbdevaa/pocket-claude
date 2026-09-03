@@ -1,0 +1,25 @@
+# секреты
+.env
+.env.*
+!.env.example
+
+# история переписки — это личные диалоги, а не данные приложения.
+# Опаснее ключа: ключ отзывается за минуту, переписка — нет.
+data/
+*.db
+*.db-journal
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# рантайм
+node_modules/
+logs/
+*.log
+npm-debug.log*
+
+# ОС и редакторы
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

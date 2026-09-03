@@ -1,0 +1,22 @@
+{
+  "name": "pocket-claude",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Личный Telegram-бот с Claude, работает локально через polling",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node --env-file=.env src/index.js",
+    "smoke": "node --env-file=.env scripts/smoke-claude.js",
+    "check-net": "node scripts/check-net.js",
+    "setup-bot": "node --env-file=.env scripts/setup-bot.js"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.123.0",
+    "grammy": "^1.46.0"
+  }
+}
